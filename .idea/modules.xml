@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Challenges.iml" filepath="$PROJECT_DIR$/Challenges.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SkillValue/LostInSpace_29072018/LostInSpace_29072018.iml" filepath="$PROJECT_DIR$/SkillValue/LostInSpace_29072018/LostInSpace_29072018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SkillValue/SkillValue.iml" filepath="$PROJECT_DIR$/SkillValue/SkillValue.iml" />
+    </modules>
+  </component>
+</project>
