@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Challenges.iml" filepath="$PROJECT_DIR$/Challenges.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codility/Codility.iml" filepath="$PROJECT_DIR$/Codility/Codility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Codility/GrandChallenge_08092018/GrandChallenge_08092018.iml" filepath="$PROJECT_DIR$/Codility/GrandChallenge_08092018/GrandChallenge_08092018.iml" />
       <module fileurl="file://$PROJECT_DIR$/SkillValue/LostInSpace_29072018/LostInSpace_29072018.iml" filepath="$PROJECT_DIR$/SkillValue/LostInSpace_29072018/LostInSpace_29072018.iml" />
       <module fileurl="file://$PROJECT_DIR$/SkillValue/SkillValue.iml" filepath="$PROJECT_DIR$/SkillValue/SkillValue.iml" />
     </modules>
