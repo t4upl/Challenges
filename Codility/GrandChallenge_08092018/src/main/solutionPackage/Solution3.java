@@ -36,7 +36,7 @@ public class Solution3 {
                 secondLetter = currentChar;
                 lastLetter = currentChar;
 
-                int longestBalancedStringLength = inspectSolution(S, startIndex, i, firstLetter);
+                int longestBalancedStringLength = inspectSolution(S, startIndex, i, firstLetter, result);
                 if (result < longestBalancedStringLength) {
                     result = longestBalancedStringLength;
                 }
@@ -46,7 +46,7 @@ public class Solution3 {
             }
         }
 
-        int longestBalancedStringLength = inspectSolution(S, startIndex, S.length(), firstLetter);
+        int longestBalancedStringLength = inspectSolution(S, startIndex, S.length(), firstLetter, result);
         if (result < longestBalancedStringLength) {
             result = longestBalancedStringLength;
         }
@@ -62,11 +62,15 @@ public class Solution3 {
         }
     }
 
-    public int inspectSolution(String S, int startIndex, int endIndex, char firstLetter) {
+    public int inspectSolution(String S, int startIndex, int endIndex, char firstLetter, int longestBlockSoFar) {
         int sum  = 0;
 
         //length of block
         for (int i = (endIndex - startIndex)/2*2; i > 0; i-=2) {
+
+            if (i <= longestBlockSoFar) {
+                return -1;
+            }
 
             //check first block
             sum = inspectSolutionFitstSum(S, startIndex, firstLetter, i);
