@@ -2,16 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Codility</artifactId>
+        <groupId>GroupId</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>GroupId</groupId>
-    <artifactId>Codility</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>GrandChallenge_08092018</module>
-        <module>Bromum 2018_13102018</module>
-    </modules>
+    <artifactId>Bromum 2018_13102018</artifactId>
 
 
 </project>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/Bromum2018_13102018.iml" filepath="$PROJECT_DIR$/Codility/Bromum 2018_13102018/Bromum2018_13102018.iml" />
       <module fileurl="file://$PROJECT_DIR$/Challenges.iml" filepath="$PROJECT_DIR$/Challenges.iml" />
       <module fileurl="file://$PROJECT_DIR$/Codility/Codility.iml" filepath="$PROJECT_DIR$/Codility/Codility.iml" />
       <module fileurl="file://$PROJECT_DIR$/Codility/GrandChallenge_08092018/GrandChallenge_08092018.iml" filepath="$PROJECT_DIR$/Codility/GrandChallenge_08092018/GrandChallenge_08092018.iml" />
