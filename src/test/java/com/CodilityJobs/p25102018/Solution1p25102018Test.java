@@ -1,6 +1,6 @@
 package com.CodilityJobs.p25102018;
 
-import com.journaldev.CodilityJobs.p25102018.Solution1p25102018;
+import com.artifactId.CodilityJobs.p25102018.Solution1p25102018;
 import org.junit.Assert;
 import org.junit.Test;
 

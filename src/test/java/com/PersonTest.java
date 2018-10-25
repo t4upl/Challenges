@@ -1,6 +1,6 @@
 package com;
 
-import com.journaldev.Person;
+import com.artifactId.Person;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
