@@ -2,11 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7abdbf24-3bb5-40a0-8d98-a6e975ad4056" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Foo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artifactId/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/journaldev/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Codility/GrandChallenge_08092018/src/main/solutionPackage/Solution3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Codility/GrandChallenge_08092018/src/main/solutionPackage/Solution3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Challenges.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Challenges.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codility/Bromum 2018_13102018/Bromum2018_13102018.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Codility/Bromum 2018_13102018/Bromum2018_13102018.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codility/Bromum 2018_13102018/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Codility/Bromum 2018_13102018/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codility/GrandChallenge_08092018/GrandChallenge_08092018.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Codility/GrandChallenge_08092018/GrandChallenge_08092018.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bromum2018_13102018/SolutionPackage/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bromum2018_13102018/SolutionPackage/Solution1$Bucket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bromum2018_13102018/SolutionPackage/Solution1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bromum2018_13102018/SolutionPackage/Solutionable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Bromum2018_13102018/TestPackage/Tests.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Codility/target/" />
+    <ignored path="$PROJECT_DIR$/Codility/GrandChallenge_08092018/target/" />
+    <ignored path="$PROJECT_DIR$/Codility/Bromum 2018_13102018/target/" />
+    <ignored path="$PROJECT_DIR$/artifactId/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +42,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Codility/GrandChallenge_08092018/src/test/testPackage/Tests.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="157" column="9" lean-forward="true" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Foo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Foo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artifactId/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/journaldev/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <folding>
+                <element signature="e#107#108#0" expanded="true" />
+                <element signature="e#142#143#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/PersonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,20 +94,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Solution3.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Codility/GrandChallenge_08092018/src/main/solutionPackage/Solution3.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Codility/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1388">
-              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            <state>
+              <caret selection-end-line="16" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NaiveSolution.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Codility/GrandChallenge_08092018/src/main/solutionPackage/NaiveSolution.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+            <state relative-caret-position="258">
+              <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Challenges.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Challenges.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -87,18 +157,45 @@
         <option value="$PROJECT_DIR$/Codility/GrandChallenge_08092018/src/main/solutionPackage/NaiveSolution.java" />
         <option value="$PROJECT_DIR$/Codility/GrandChallenge_08092018/src/test/testPackage/Tests.java" />
         <option value="$PROJECT_DIR$/Codility/GrandChallenge_08092018/src/main/solutionPackage/Solution3.java" />
+        <option value="$PROJECT_DIR$/Codility/Bromum 2018_13102018/Bromum2018_13102018.iml" />
+        <option value="$PROJECT_DIR$/Codility/Bromum 2018_13102018/pom.xml" />
+        <option value="$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Result1.java" />
+        <option value="$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/test/TestPackage/Result1Test.java" />
+        <option value="$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/test/TestPackage/Result2Test.java" />
+        <option value="$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Result2.java" />
+        <option value="$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Foo.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/PersonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/journaldev/Person.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Challenges" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Challenges" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="477" />
-    <option name="y" value="30" />
+    <option name="x" value="378" />
+    <option name="y" value="18" />
     <option name="width" value="1086" />
     <option name="height" value="824" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -113,42 +210,67 @@
             <path>
               <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
               <item name="Challenges" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Challenges" type="462c0819:PsiDirectoryNode" />
-              <item name="Codility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Challenges" type="462c0819:PsiDirectoryNode" />
-              <item name="Codility" type="462c0819:PsiDirectoryNode" />
-              <item name="GrandChallenge_08092018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Challenges" type="462c0819:PsiDirectoryNode" />
-              <item name="Codility" type="462c0819:PsiDirectoryNode" />
-              <item name="GrandChallenge_08092018" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
               <item name="Challenges" type="462c0819:PsiDirectoryNode" />
-              <item name="Codility" type="462c0819:PsiDirectoryNode" />
-              <item name="GrandChallenge_08092018" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Challenges" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Challenges" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Challenges" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="journaldev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Challenges" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
               <item name="Challenges" type="462c0819:PsiDirectoryNode" />
-              <item name="Codility" type="462c0819:PsiDirectoryNode" />
-              <item name="GrandChallenge_08092018" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="testPackage" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Challenges" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="Challenges" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="JUnit5.0" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -161,7 +283,8 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -169,6 +292,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\user_space\good_stuff_2\projects\Intelij project\Challenges" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\user_space\good_stuff_2\projects\Intelij project\Challenges\SkillValue" />
@@ -186,22 +312,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.testRandom">
+  <component name="RunManager" selected="JUnit.PersonTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GrandChallenge_08092018" />
+    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Challenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testPackage.*" />
+          <option name="PATTERN" value="com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="testPackage" />
-      <option name="MAIN_CLASS_NAME" value="testPackage.Tests" />
+      <option name="PACKAGE_NAME" value="com" />
+      <option name="MAIN_CLASS_NAME" value="com.PersonTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -213,19 +339,42 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Tests.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GrandChallenge_08092018" />
+    <configuration name="Result1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bromum2018_13102018" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testPackage.*" />
+          <option name="PATTERN" value="TestPackage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="testPackage" />
-      <option name="MAIN_CLASS_NAME" value="testPackage.Tests" />
-      <option name="METHOD_NAME" value="test11" />
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.Result1Test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Result1Test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bromum2018_13102018" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.Result1Test" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -236,19 +385,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Tests.test14" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GrandChallenge_08092018" />
+    <configuration name="Result2Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bromum2018_13102018" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testPackage.*" />
+          <option name="PATTERN" value="TestPackage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="testPackage" />
-      <option name="MAIN_CLASS_NAME" value="testPackage.Tests" />
-      <option name="METHOD_NAME" value="test14" />
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.Result2Test" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -259,42 +408,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Tests.test18" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GrandChallenge_08092018" />
+    <configuration name="Result2Test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bromum2018_13102018" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testPackage.*" />
+          <option name="PATTERN" value="TestPackage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="testPackage" />
-      <option name="MAIN_CLASS_NAME" value="testPackage.Tests" />
-      <option name="METHOD_NAME" value="test18" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="Tests.testRandom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GrandChallenge_08092018" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testPackage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="testPackage" />
-      <option name="MAIN_CLASS_NAME" value="testPackage.Tests" />
-      <option name="METHOD_NAME" value="testRandom" />
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.Result2Test" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -344,19 +470,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Tests" />
-      <item itemvalue="JUnit.Tests.test11" />
-      <item itemvalue="JUnit.Tests.test14" />
-      <item itemvalue="JUnit.Tests.test18" />
-      <item itemvalue="JUnit.Tests.testRandom" />
+      <item itemvalue="JUnit.Result1Test.test3" />
+      <item itemvalue="JUnit.Result1Test" />
+      <item itemvalue="JUnit.Result2Test.test1" />
+      <item itemvalue="JUnit.Result2Test.test2" />
+      <item itemvalue="JUnit.PersonTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests.testRandom" />
-        <item itemvalue="JUnit.Tests" />
-        <item itemvalue="JUnit.Tests.test18" />
-        <item itemvalue="JUnit.Tests.test14" />
-        <item itemvalue="JUnit.Tests.test11" />
+        <item itemvalue="JUnit.PersonTest" />
+        <item itemvalue="JUnit.Result2Test.test2" />
+        <item itemvalue="JUnit.Result2Test.test1" />
+        <item itemvalue="JUnit.Result1Test" />
+        <item itemvalue="JUnit.Result1Test.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -374,35 +500,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_testRandom - 2018.09.11 at 22h 32m 48s.xml">
-      <configuration name="Tests.testRandom" configurationId="JUnit" />
+    <history-entry file="Result2Test_test1 - 2018.10.19 at 10h 50m 00s.xml">
+      <configuration name="Result2Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testRandom - 2018.09.11 at 22h 33m 00s.xml">
-      <configuration name="Tests.testRandom" configurationId="JUnit" />
+    <history-entry file="Result2Test_test1 - 2018.10.19 at 10h 51m 04s.xml">
+      <configuration name="Result2Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests - 2018.09.11 at 22h 35m 12s.xml">
-      <configuration name="Tests" configurationId="JUnit" />
+    <history-entry file="Result2Test_test1 - 2018.10.19 at 10h 51m 10s.xml">
+      <configuration name="Result2Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests - 2018.09.11 at 22h 36m 49s.xml">
-      <configuration name="Tests" configurationId="JUnit" />
+    <history-entry file="Result2Test_test1 - 2018.10.19 at 10h 51m 52s.xml">
+      <configuration name="Result2Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests - 2018.09.11 at 23h 27m 32s.xml">
-      <configuration name="Tests" configurationId="JUnit" />
+    <history-entry file="Result2Test_test1 - 2018.10.19 at 10h 51m 58s.xml">
+      <configuration name="Result2Test.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests - 2018.09.14 at 01h 17m 25s.xml">
-      <configuration name="Tests" configurationId="JUnit" />
+    <history-entry file="Result2Test_test2 - 2018.10.19 at 10h 56m 05s.xml">
+      <configuration name="Result2Test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testRandom - 2018.09.14 at 01h 17m 32s.xml">
-      <configuration name="Tests.testRandom" configurationId="JUnit" />
+    <history-entry file="Result2Test_test2 - 2018.10.19 at 10h 56m 22s.xml">
+      <configuration name="Result2Test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testRandom - 2018.09.14 at 01h 18m 06s.xml">
-      <configuration name="Tests.testRandom" configurationId="JUnit" />
+    <history-entry file="Result2Test_test2 - 2018.10.19 at 10h 56m 43s.xml">
+      <configuration name="Result2Test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testRandom - 2018.09.14 at 01h 18m 11s.xml">
-      <configuration name="Tests.testRandom" configurationId="JUnit" />
+    <history-entry file="Result2Test_test2 - 2018.10.19 at 10h 56m 53s.xml">
+      <configuration name="Result2Test.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_testRandom - 2018.09.14 at 01h 18m 15s.xml">
-      <configuration name="Tests.testRandom" configurationId="JUnit" />
+    <history-entry file="PersonTest - 2018.10.25 at 12h 19m 17s.xml">
+      <configuration name="PersonTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -410,10 +536,12 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="DB Browser" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3298292" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="bottom" id="DB Execution Console" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.500625" side_tool="true" weight="0.3981603" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.171875" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3285151" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -465,7 +593,7 @@
           <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="61" />
+      <option name="time" value="69" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -528,6 +656,16 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>sArr[0]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sArr</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>S.substring(7,10)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -565,91 +703,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Codility/GrandChallenge_08092018/src/main/solutionPackage/Solution2.java" />
-    <entry file="file://$PROJECT_DIR$/Codility/GrandChallenge_08092018/src/main/solutionPackage/NaiveSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Codility/GrandChallenge_08092018/src/main/solutionPackage/Solution3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="102" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SkillValue/LostInSpace_29072018/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SkillValue/LostInSpace_29072018/src/SendVersion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SkillValue/LostInSpace_29072018/src/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="102" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SkillValue/LostInSpace_29072018/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SkillValue/LostInSpace_29072018/src/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SkillValue/LostInSpace_29072018/src/SendVersion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -753,9 +806,6 @@
     <entry file="file://$PROJECT_DIR$/SkillValue/LostInSpace_29072018.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Challenges.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Codility/GrandChallenge_08092018/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -801,9 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Codility/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -825,9 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10">
           <caret line="157" column="9" lean-forward="true" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -835,6 +879,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1388">
           <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/Bromum2018_13102018.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Solution1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="50" column="2" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Result1.java" />
+    <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Solutionable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/test/TestPackage/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="84" column="9" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/test/TestPackage/Result1Test.java" />
+    <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/test/TestPackage/Result2Test.java" />
+    <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Result2.java" />
+    <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codility/Bromum 2018_13102018/src/main/SolutionPackage/Foo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artifactId/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Challenges.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Codility/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/PersonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/journaldev/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -890,7 +1042,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>GrandChallenge_08092018</last-edited>
+          <last-edited>SkillValue</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
