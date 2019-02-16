@@ -1,17 +1,18 @@
 package com.CodilityChallenges.Yttrium_16022019;
 
 import com.artifactId.CodilityChallenges.Yttrium_16022019.Solution;
+import com.artifactId.CodilityChallenges.Yttrium_16022019.Solution2;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 public class Solution_test {
 
-    Solution solution;
+    Solution2 solution;
 
     @Before
     public void setUp(){
-        solution = new Solution();
+        solution = new Solution2();
     }
 
 
