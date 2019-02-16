@@ -1,12 +1,11 @@
 package com.CodilityChallenges.Yttrium_16022019;
 
-import com.artifactId.CodilityChallenges.Yttrium_16022019.Solution;
 import com.artifactId.CodilityChallenges.Yttrium_16022019.Solution2;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Solution_test {
+public class Solution2_test {
 
     Solution2 solution;
 
@@ -14,8 +13,6 @@ public class Solution_test {
     public void setUp(){
         solution = new Solution2();
     }
-
-
 
     @Test
     public void test1(){
@@ -70,6 +67,11 @@ public class Solution_test {
     @Test
     public void test11(){
         Assert.assertEquals(9, solution.solution("erqmfuvnng", 1));
+    }
+
+    @Test
+    public void test12(){
+        Assert.assertEquals(17, solution.solution("ydazedqixgyipyrysbwp", 3));
     }
 
 
