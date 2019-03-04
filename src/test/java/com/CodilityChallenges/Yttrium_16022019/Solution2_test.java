@@ -2,22 +2,24 @@ package com.CodilityChallenges.Yttrium_16022019;
 
 import com.artifactId.CodilityChallenges.Yttrium_16022019.Solution2;
 import com.artifactId.CodilityChallenges.Yttrium_16022019.Solution3;
+import com.artifactId.CodilityChallenges.Yttrium_16022019.Solution4;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Solution2_test {
 
-    Solution3 solution;
-    Solution2 naiveSolution;
+    Solution4 solution;
+    Solution3 naiveSolution;
 
     @Before
     public void setUp(){
 
-        solution = new Solution3();
-        naiveSolution = new Solution2();
+        solution = new Solution4();
+        naiveSolution = new Solution3();
     }
 
     @Test
@@ -89,8 +91,8 @@ public class Solution2_test {
 
     @Test
     public void random() {
-        int numberOfTests = 10;
-        int length = 12;
+        int numberOfTests = 1;
+        int length = 3000000;
         int K = 4;
         final int a = 'a';
         for (int i = 0; i < numberOfTests; i++) {
@@ -113,8 +115,8 @@ public class Solution2_test {
     }
 
     void runTest(int expected, String S, int K){
-        solution = new Solution3();
-        naiveSolution = new Solution2();
+        solution = new Solution4();
+        naiveSolution = new Solution3();
 
         if (expected > -2) {
             Assert.assertEquals(expected, naiveSolution.solution(S, K));
@@ -125,12 +127,14 @@ public class Solution2_test {
             //this will compare solution with naive solution
             System.out.println(S);
 
-            System.out.println("running naive");
-            int naive = naiveSolution.solution(S, K);
-
-            System.out.println("running result");
+//            System.out.println("running naive");
+//            int naive = naiveSolution.solution(S, K);
+//
+//            System.out.println("running result");
+            long l = System.currentTimeMillis();
             int result = solution.solution(S, K);
-            Assert.assertEquals(naive, result);
+            System.out.println(System.currentTimeMillis() - l);
+//            Assert.assertEquals(naive, result);
 
         }
     }
