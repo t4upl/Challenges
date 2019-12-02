@@ -1,17 +1,18 @@
 package com.leetcode.repeatedSubstringPattern;
 
-import com.artifactId.leetcode.repeatedSubstringPattern.Solution;
+import com.artifactId.leetcode.repeatedSubstringPattern.Solution2;
+import com.artifactId.leetcode.repeatedSubstringPattern.SolutionInterface;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 public class SolutionTest {
 
-  Solution solution;
+  SolutionInterface solution;
 
   @Before
   public void setUp() {
-    this.solution = new Solution();
+    this.solution = new Solution2();
   }
 
   @Test
@@ -70,8 +71,5 @@ public class SolutionTest {
     boolean b = solution.repeatedSubstringPattern(s);
     Assert.assertEquals(true, b);
   }
-
-
-
 
 }
