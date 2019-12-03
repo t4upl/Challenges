@@ -1,28 +1,29 @@
 package com.artifactId.leetcode.romanToInt;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Solution implements SolutionInterface {
+public class Solution2 implements SolutionInterface {
 
   /**
    *
-   * Runtime: 17 ms, faster than 6.05% of Java online submissions for Roman to Integer.
-   * Memory Usage: 37.3 MB, less than 57.32% of Java online submissions for Roman to Integer.
+   * Runtime: 6 ms, faster than 51.47% of Java online submissions for Roman to Integer.
+   * Memory Usage: 36.3 MB, less than 100.00% of Java online submissions for Roman to Integer.
+   *
    */
 
   @Override
   public int romanToInt(String s) {
-    Map<Character, Integer> map = Stream.of(new Object[][] {
-      { 'I', 1 },
-      { 'V', 5 },
-      { 'X', 10 },
-      { 'L', 50 },
-      { 'C', 100 },
-      { 'D', 500 },
-      { 'M', 1000 }
-    }).collect(Collectors.toMap(data -> (Character) data[0], data -> (Integer) data[1]));
+    Map<Character, Integer> map = new HashMap<>();
+    map.put( 'I', 1 );
+    map.put( 'V', 5 );
+    map.put( 'X', 10 );
+    map.put( 'L', 50  );
+    map.put( 'C', 100 );
+    map.put( 'D', 500 );
+    map.put( 'M', 1000 );
 
     char[] chars = s.toCharArray();
     int result = 0;
