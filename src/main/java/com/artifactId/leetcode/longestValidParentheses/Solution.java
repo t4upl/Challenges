@@ -1,70 +1,56 @@
 package com.artifactId.leetcode.longestValidParentheses;
 
-import java.util.HashMap;
-import java.util.Map;
-
+/**
+ * Runtime: 1 ms, faster than 100.00% of Java online submissions for Longest Valid Parentheses.
+ * Memory Usage: 35.7 MB, less than 100.00% of Java online submissions for Longest Valid Parentheses.
+ */
 public class Solution implements SolutionInterface {
 
-  Map<Integer, Integer> positionValueMap = new HashMap<>();
-  char[] chars;
+  int left = 0;
+  int right = 0;
+  int longest = 0;
 
   @Override
   public int longestValidParentheses(String s) {
-    int longest = 0;
-    chars = s.toCharArray();
-    int openingBracketIndex = 0;
-    for (int i = 0; i < chars.length; ) {
-      if (chars[i] == '(') {
-        openingBracketIndex = i;
-        int closingBracket = findClosingBracket(i + 1);
-        longest = closingBracket - i + 1;
-        i = closingBracket + 1;
-      } else {
-        longest = i - openingBracketIndex + 1;
-        i++;
-      }
+    char[] chars = s.toCharArray();
+
+    for (int i = 0; i < chars.length; i++) {
+      getCurr(chars[i], true);
     }
 
-    return longest;
+    reset();
+    for (int i = chars.length - 1; i > -1; i--) {
+      getCurr(chars[i], false);
+    }
+
+      return longest;
+    }
+
+  private void getCurr(char aChar, boolean leftToRight) {
+    if (aChar == '(') {
+      left++;
+    } else {
+      right++;
+    }
+
+    if (left == right) {
+      int curr = leftToRight ? right * 2 : left * 2;
+      longest = Math.max(longest, curr);
+    } else {
+
+      if (leftToRight && right > left) {
+        reset();
+      }
+
+      if (!leftToRight && right < left) {
+        reset();
+      }
+
+    }
   }
 
-
-  private int findClosingBracket(int startingPostion) {
-    for (int i = startingPostion; i < chars.length; ) {
-      if (chars[i] == '(') {
-        int closingBracket = findClosingBracket(i + 1);
-        return closingBracket;
-      } else {
-        if (i + 1 < chars.length && chars[i + 1] == '(') {
-          i = findClosingBracket(i + 2);
-        }
-        return i;
-      }
-
-    }
-    return -1;
+  private void reset() {
+    left = 0;
+    right = 0;
   }
 }
-
-//    }
-//    for (int i = startingPostion; i < chars.length;) {
-//      if ( chars[i] == '(') {
-//        int closingBracket = findClosingBracket(i + 1);
-////        if (chars[closingBracket + 1] < chars.length && chars[closingBracket + 1] == '(') {
-////          closingBracket = findClosingBracket(closingBracket + 1);
-////        }
-//
-//        return closingBracket;
-//      } else {
-//        if ( i + 1 < chars.length && chars[i+1] == '(') {
-//          int closingBracket = findClosingBracket(i + 1);
-//          return closingBracket;
-//        }
-//        return i;
-//      }
-//    }
-//
-//    throw new RuntimeException("dupa");
-
-//  }
-//}
