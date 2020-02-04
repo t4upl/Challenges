@@ -1,5 +1,9 @@
 package com.artifactId.leetcode.trappingrainwater;
 
+/**
+ * Runtime: 1 ms, faster than 89.92% of Java online submissions for Trapping Rain Water.
+ * Memory Usage: 38.7 MB, less than 63.70% of Java online submissions for Trapping Rain Water.
+ */
 public class TrappingRainWaterSolutionImpl implements TrappingRainWaterSolution {
 
   @Override
