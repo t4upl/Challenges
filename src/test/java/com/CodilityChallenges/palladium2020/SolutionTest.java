@@ -65,6 +65,41 @@ public class SolutionTest {
     reverseTest(arr, expected);
   }
 
+  @Test
+  public void test1() {
+    int[] arr = {1};
+    int expected = 1;
+    int result = solution.solution(arr);
+    Assertions.assertEquals(expected, result);
+    reverseTest(arr, expected);
+  }
+
+  @Test
+  public void test2() {
+    int[] arr = {1, 2};
+    int expected = 3;
+    int result = solution.solution(arr);
+    Assertions.assertEquals(expected, result);
+    reverseTest(arr, expected);
+  }
+
+  @Test
+  public void test3() {
+    int[] arr = {1, 2, 3};
+    int expected = 7;
+    int result = solution.solution(arr);
+    Assertions.assertEquals(expected, result);
+    reverseTest(arr, expected);
+  }
+
+  @Test
+  public void test4() {
+    int[] arr = {1, 3, 2, 2, 2, 3};
+    int expected = 16;
+    int result = solution.solution(arr);
+    Assertions.assertEquals(expected, result);
+    reverseTest(arr, expected);
+  }
 
   private void reverseTest(int[] arr, int expected) {
     List<Integer> ints = Arrays.stream(arr).boxed().collect(Collectors.toList());

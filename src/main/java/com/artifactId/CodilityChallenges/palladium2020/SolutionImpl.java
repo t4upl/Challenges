@@ -1,27 +1,24 @@
 package com.artifactId.CodilityChallenges.palladium2020;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
 
+/**
+ *  Codility Silver Award
+ *  
+ *  correct functionality, problems with scalability
+ */
 public class SolutionImpl implements Solution {
 
   @Override
   public int solution(int[] H) {
-    Map<Integer, Long> secondFrequency = Arrays.stream(H).boxed()
-      .collect(Collectors.groupingBy(x -> x, Collectors.counting()));
-
-    int[] sortedLengthsArr = Arrays.copyOf(H, H.length);
-    Arrays.sort(sortedLengthsArr);
-    List<Integer> sortedLengths  = Arrays.stream(sortedLengthsArr).boxed().sorted(Comparator.reverseOrder())
-      .collect(Collectors.toList());
+    Map<Integer, Long> secondFrequency = getFrequency(H);
+    int maxValue  = getMaxValue(H);
 
     //single banner
-    int result = sortedLengths.get(0) * H.length;
+    int result = maxValue * H.length;
     int highestInFirst = -1;
-    int highestInSecond = sortedLengths.get(0);
+    int highestInSecond = maxValue;
 
 
     for (int i = 0; i < H.length; i++) {
@@ -34,8 +31,7 @@ public class SolutionImpl implements Solution {
       if (elementCount == 0) {
         secondFrequency.remove(newBlockInFirst);
         if (newBlockInFirst == highestInSecond) {
-        highestInSecond = Math
-          .toIntExact(secondFrequency.keySet().stream().max(Comparator.naturalOrder()).orElse(0));
+        highestInSecond = getHighestInSecond(secondFrequency);
         }
       }
 
@@ -44,5 +40,37 @@ public class SolutionImpl implements Solution {
     }
 
     return result;
+  }
+
+  private int getHighestInSecond(Map<Integer, Long> secondFrequency) {
+    int max = -1;
+    for (Integer integer : secondFrequency.keySet()) {
+      max = Math.max(integer, max);
+    }
+    return max;
+  }
+
+  private Map<Integer, Long> getFrequency(int[] H) {
+    Map<Integer, Long> map = new HashMap<>();
+    for (int i : H) {
+      if (!map.containsKey(i)) {
+        map.put(i, 0L);
+      }
+      map.put(i, map.get(i) + 1);
+    }
+
+    return map;
+  }
+
+  private int getMaxValue(int[] H) {
+    boolean seen = false;
+    int best = 0;
+    for (int i : H) {
+      if (!seen || i > best) {
+        seen = true;
+        best = i;
+      }
+    }
+    return seen ? best : 0;
   }
 }
