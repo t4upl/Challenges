@@ -1,7 +1,12 @@
 package com.artifactId.CodilityChallenges.palladium2020;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  *  Codility Silver Award
@@ -10,12 +15,14 @@ import java.util.Map;
  */
 public class SolutionImpl implements Solution {
 
+  private List<Integer> valuesInSecondSorted;
+  private int highestValueInSecondIndex = 0;
+
   @Override
   public int solution(int[] H) {
     Map<Integer, Long> secondFrequency = getFrequency(H);
+    valuesInSecondSorted = getValuesInSecondSorted(H);
     int maxValue  = getMaxValue(H);
-
-    //single banner
     int result = maxValue * H.length;
     int highestInFirst = -1;
     int highestInSecond = maxValue;
@@ -29,9 +36,10 @@ public class SolutionImpl implements Solution {
       elementCount--;
       secondFrequency.put(newBlockInFirst, elementCount);
       if (elementCount == 0) {
+
         secondFrequency.remove(newBlockInFirst);
-        if (newBlockInFirst == highestInSecond) {
-        highestInSecond = getHighestInSecond(secondFrequency);
+        if (newBlockInFirst == highestInSecond && secondFrequency.size() > 0) {
+          highestInSecond = getHighestInSecondV2(secondFrequency);
         }
       }
 
@@ -42,12 +50,27 @@ public class SolutionImpl implements Solution {
     return result;
   }
 
-  private int getHighestInSecond(Map<Integer, Long> secondFrequency) {
-    int max = -1;
-    for (Integer integer : secondFrequency.keySet()) {
-      max = Math.max(integer, max);
+  private int getHighestInSecondV2(Map<Integer, Long> secondFrequency) {
+    Long mapValue = secondFrequency.get(valuesInSecondSorted.get(highestValueInSecondIndex));
+    while (mapValue == null) {
+      highestValueInSecondIndex++;
+      mapValue = secondFrequency.get(valuesInSecondSorted.get(highestValueInSecondIndex));
     }
-    return max;
+
+    return valuesInSecondSorted.get(highestValueInSecondIndex);
+  }
+
+  private List<Integer> getValuesInSecondSorted(int[] H) {
+    List<Integer> list = new ArrayList<>();
+    Set<Integer> uniqueValues = new HashSet<>();
+    for (int i : H) {
+      if (uniqueValues.add(i)) {
+        Integer integer = i;
+        list.add(integer);
+      }
+    }
+    list.sort(Collections.reverseOrder());
+    return list;
   }
 
   private Map<Integer, Long> getFrequency(int[] H) {

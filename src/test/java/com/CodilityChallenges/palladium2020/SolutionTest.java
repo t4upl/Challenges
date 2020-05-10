@@ -18,13 +18,13 @@ public class SolutionTest {
   Solution solution2;
 
   @Before
-  public void setUp() throws Exception {
+  public void setUp() {
     solution100 = new SolutionImpl();
     solution2 = new SolutionImpl();
   }
 
   @Test
-  public void codility1() {
+  public void codility1() throws Exception {
     int[] arr = {3, 1, 4};
     int expected = 10;
     int result = solution2.solution(arr);
@@ -33,7 +33,7 @@ public class SolutionTest {
   }
 
   @Test
-  public void codility2() {
+  public void codility2() throws Exception {
     int[] arr = {5, 3, 2, 4};
     int expected = 17;
     int result = solution2.solution(arr);
@@ -42,7 +42,7 @@ public class SolutionTest {
   }
 
   @Test
-  public void codility3() {
+  public void codility3() throws Exception {
     int[] arr = {5, 3, 5, 2, 1};
     int expected = 19;
     int result = solution2.solution(arr);
@@ -240,6 +240,7 @@ public class SolutionTest {
 
   private void reverseTest(int[] arr, int expected) {
     System.out.println("-----------\nNormal test passed starting reversed test");
+    setUp();
     List<Integer> ints = Arrays.stream(arr).boxed().collect(Collectors.toList());
     Collections.reverse(ints);
     int[] objects =  ints.stream().mapToInt(i->i).toArray();
