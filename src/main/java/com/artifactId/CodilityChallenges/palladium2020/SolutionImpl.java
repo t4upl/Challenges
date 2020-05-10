@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  *  Codility Silver Award
- *  
+ *
  *  correct functionality, problems with scalability
  */
 public class SolutionImpl implements Solution {
