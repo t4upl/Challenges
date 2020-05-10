@@ -2,7 +2,6 @@ package com.CodilityChallenges.palladium2020;
 
 import com.artifactId.CodilityChallenges.palladium2020.Solution;
 import com.artifactId.CodilityChallenges.palladium2020.SolutionImpl;
-import com.artifactId.CodilityChallenges.palladium2020.SolutionImpl2;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -21,7 +20,7 @@ public class SolutionTest {
   @Before
   public void setUp() throws Exception {
     solution100 = new SolutionImpl();
-    solution2 = new SolutionImpl2();
+    solution2 = new SolutionImpl();
   }
 
   @Test
@@ -48,7 +47,7 @@ public class SolutionTest {
     int expected = 19;
     int result = solution2.solution(arr);
     Assertions.assertEquals(expected, result);
-//    reverseTest(arr, expected);
+    reverseTest(arr, expected);
   }
 
   @Test
@@ -155,7 +154,8 @@ public class SolutionTest {
   @Test
   public void test10() {
     int[] arr = {7, 10, 5, 9, 0};
-    int expected = 47;
+    // 10 10 10 10 0
+    int expected = 40;
     int result = solution2.solution(arr);
     Assertions.assertEquals(expected, result);
     System.out.println("First Assertion passed");
@@ -166,7 +166,7 @@ public class SolutionTest {
   @Test
   public void test11() {
     int[] arr = {4, 7, 1, 3, 7, 0, 8, 7, 0};
-    int expected = 66;
+    int expected = 64;
     int result = solution2.solution(arr);
     Assertions.assertEquals(expected, result);
     System.out.println("First Assertion passed");
@@ -178,6 +178,37 @@ public class SolutionTest {
   public void test12() {
     int[] arr = {1, 2, 3, 7, 8};
     int expected = 25;
+    int result = solution2.solution(arr);
+    Assertions.assertEquals(expected, result);
+    System.out.println("First Assertion passed");
+    reverseTest(arr, expected);
+    System.out.println("Reverse Assertion passed");
+  }
+
+  @Test
+  public void test13() {
+    int[] arr = {1, 1, 1, 1, 7, 8, 1};
+    int expected = 28;
+    int result = solution2.solution(arr);
+    Assertions.assertEquals(expected, result);
+    System.out.println("First Assertion passed");
+    reverseTest(arr, expected);
+    System.out.println("Reverse Assertion passed");
+  }
+
+  @Test
+  public void test14() {
+    int[] arr = {1, 1, 7, 8, 1};
+    int expected = 26;
+    int result = solution2.solution(arr);
+    Assertions.assertEquals(expected, result);
+    reverseTest(arr, expected);
+  }
+
+  @Test
+  public void test15() {
+    int[] arr = {1, 1, 7, 8, 7, 1};
+    int expected = 34;
     int result = solution2.solution(arr);
     Assertions.assertEquals(expected, result);
     System.out.println("First Assertion passed");
@@ -208,6 +239,7 @@ public class SolutionTest {
   }
 
   private void reverseTest(int[] arr, int expected) {
+    System.out.println("-----------\nNormal test passed starting reversed test");
     List<Integer> ints = Arrays.stream(arr).boxed().collect(Collectors.toList());
     Collections.reverse(ints);
     int[] objects =  ints.stream().mapToInt(i->i).toArray();
