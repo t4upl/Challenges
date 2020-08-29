@@ -1,5 +1,9 @@
 package com.artifactId.leetcode.coinchange;
 
+/**
+ * Runtime: 37 ms, faster than 18.49% of Java online submissions for Coin Change.
+ * Memory Usage: 42.6 MB, less than 10.56% of Java online submissions for Coin Change.
+ */
 public class Solution {
 
   private int[] coins;
