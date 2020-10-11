@@ -71,6 +71,23 @@ public class SolutionTest {
     assertEquals(17, result);
   }
 
+  @Test
+  public void test8() {
+    int N = 2;
+    int[] arr = {80, 70, 50, 50, 50, 50};
+    int result = solution.solve(N, arr);
+    assertEquals(180, result);
+  }
+
+  //REASON WHY THE TESTS CASES FAIL
+  @Test
+  public void test9() {
+    int N = 2;
+    int[] arr = {80, 70, 60, 60, 60};
+    int result = solution.solve(N, arr);
+    assertEquals(180, result);
+  }
+
 
 
 }
