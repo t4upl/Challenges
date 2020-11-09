@@ -1,116 +1,131 @@
 package com.artifactId.leetcode.wordLadderii;
 
-import static java.util.stream.Collectors.toMap;
-
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.Set;
 
 /**
- * Time exceeded
+ * I hve no idea how it works despite going full bfs
+ *
  */
 public class Solution {
 
-  private Map<String, List<String>> moveMap;
-  private List<Node> results = new ArrayList<>();
-  private int firstResultUsedSize = Integer.MAX_VALUE;
-
-  public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
-    initializeMoveMap(wordList, beginWord, endWord);
-    List<Node> toBeConsumed = new LinkedList<>();
-    toBeConsumed.add(new Node(beginWord, new ArrayList<>()));
-    while (!toBeConsumed.isEmpty()) {
-      Node node = ((LinkedList<Node>) toBeConsumed).pop();
-      if (node.getValue().equals(endWord)) {
-        if (results.isEmpty() || node.getUsed().size() == firstResultUsedSize) {
-          results.add(node);
-          if (results.size() == 1) {
-            firstResultUsedSize = results.get(0).getUsed().size();
-          }
-        }
-      }
-
-      if (node.getUsed().size() > firstResultUsedSize) {
-        break;
-      }
-      List<String> strings = moveMap.get(node.getValue());
-      strings = getUnused(node, strings);
-      List<Node> nodes = toNodes(strings, node);
-      toBeConsumed.addAll(nodes);
+  public List<List<String>> findLadders(String beginWord,
+    String endWord, List<String> wordList) {
+    List<List<String>> res = new ArrayList<>();
+    Set<String> dict = new HashSet<>(wordList);
+    if (!dict.contains(endWord)) {
+      return res;
     }
-    return toAnswer();
-
-  }
-
-  private List<List<String>> toAnswer() {
-    return results.stream().map(x -> {
-      List<String> used = x.getUsed();
-      used.add(x.getValue());
-      return used;
-    }).collect(Collectors.toList());
-  }
-
-  private List<Node> toNodes(List<String> strings, Node parent) {
-    ArrayList<String> strings1 = new ArrayList<>(parent.getUsed());
-    strings1.add(parent.getValue());
-    return strings.stream().map(x -> new Node(x, strings1)).collect(Collectors.toList());
-  }
-
-  private List<String> getUnused(Node node, List<String> strings) {
-    return strings.stream().filter(x -> !node.getUsed().contains(x)).collect(Collectors.toList());
-  }
-
-  private void initializeMoveMap(List<String> wordList, String beginWord, String endWord) {
-    ArrayList<String> strings = new ArrayList<>(wordList);
-    strings.add(beginWord);
-    strings.add(endWord);
     Map<String, List<String>> map = new HashMap<>();
-    for (String x : strings) {
-      map.put(x, getAllWordsDiffOne(x, wordList));
-    }
-    moveMap = map;
+    Set<String> startSet = new HashSet<>();
+    startSet.add(beginWord);
+    bfs(startSet, endWord, map, wordList);
+
+    List<String> list = new ArrayList<>();
+    list.add(beginWord);
+    dfs(res, list, beginWord, endWord, map);
+    return res;
   }
 
-  private List<String> getAllWordsDiffOne(String word, List<String> wordList) {
+  private void dfs(List<List<String>> res, List<String> list,
+    String word, String endWord, Map<String, List<String>> map) {
+    if (word.equals(endWord)) {
+      res.add(new ArrayList(list));
+      return;
+    }
+
+    if (map.get(word) == null) {
+      return;
+    }
+    for (String next : map.get(word)) {
+      list.add(next);
+      dfs(res, list, next, endWord, map);
+      list.remove(list.size() - 1);
+    }
+  }
+
+  private void bfs(Set<String> startSet, String endWord,
+    Map<String, List<String>> map, Collection<String> dict) {
+    if (startSet.size() == 0) {
+      return;
+    }
+
+    Set<String> tmp = new HashSet<>();
+    dict.removeAll(startSet);
+    boolean finish = false;
+
+    for (String s : startSet) {
+      if (s.equals(endWord)) {
+        return;
+      }
+
+      if (map.get(s) == null) {
+        map.put(s, findAllDiff(dict, s));
+      }
+
+      tmp.addAll(map.get(s));
+
+    }
+
+    bfs(tmp, endWord, map, dict);
+
+//    for (String s : startSet) {
+//      char[] chs = s.toCharArray();
+//      for (int i = 0; i < chs.length; i++) {
+//        char old = chs[i];
+//        for (char c = 'a'; c <= 'z'; c++) {
+//          chs[i] = c;
+//          String word = new String(chs);
+//
+//          if (dict.contains(word)) {
+//            if (word.equals(endWord)) {
+//              finish = true;
+//            } else {
+//              tmp.add(word);
+//            }
+//
+//            map.computeIfAbsent(s, k -> new ArrayList<>());
+//
+//            map.get(s).add(word);
+//          }
+//        }
+//
+//        chs[i] = old;
+//      }
+//    }
+
+//    if (!finish) {
+//      bfs(tmp, endWord, map, dict);
+//    }
+  }
+
+  private List<String> findAllDiff(Collection<String> dict, String s) {
     List<String> list = new ArrayList<>();
-    for (String x : wordList) {
-      if (letterDiff(x, word) == 1) {
-        list.add(x);
+    for (String s1 : dict) {
+      int diff = getDiff(s1, s);
+      if (diff == 1) {
+        list.add(s1);
       }
     }
     return list;
   }
 
-  private int letterDiff(String word1, String word2) {
-    int diffCount = 0;
-    for (int i = 0; i < word1.length(); i++) {
-      if (word1.charAt(i) != word2.charAt(i)) {
-        diffCount++;
+  private int getDiff(String s1, String s) {
+    int count = 0;
+    for (int i = 0; i < s1.length(); i++) {
+      if (s1.charAt(i) != s.charAt(i)) {
+        count++;
+        if (count == 2) {
+          return 2;
+        }
       }
     }
-    return diffCount;
+    return count;
   }
-
-  private class Node {
-    private String value;
-    private List<String> used;
-
-    public Node(String value, List<String> used) {
-      this.value = value;
-      this.used = used;
-    }
-
-    public String getValue() {
-      return value;
-    }
-
-    public List<String> getUsed() {
-      return used;
-    }
-  }
-
-
 }
+
