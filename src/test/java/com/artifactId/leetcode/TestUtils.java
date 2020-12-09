@@ -10,6 +10,7 @@ public class TestUtils {
     String[] split = substring.split(",");
     List<TreeNode> treeNodes = new ArrayList<>();
     for (String s : split) {
+      s = s.trim();
       if (!s.equals("null")) {
         treeNodes.add(new TreeNode(Integer.parseInt(s)));
       } else {
