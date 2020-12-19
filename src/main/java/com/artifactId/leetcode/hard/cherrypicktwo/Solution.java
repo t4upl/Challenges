@@ -1,4 +1,4 @@
-package com.artifactId.leetcode.medium.cherrypicktwo;
+package com.artifactId.leetcode.hard.cherrypicktwo;
 
 import java.util.HashMap;
 import java.util.Map;

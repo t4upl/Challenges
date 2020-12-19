@@ -1,8 +1,7 @@
-package com.artifactId.leetcode.medium.cherrypicktwo;
+package com.artifactId.leetcode.hard.cherrypicktwo;
 
 import org.junit.Before;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class SolutionTest {
