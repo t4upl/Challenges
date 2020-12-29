@@ -11,7 +11,7 @@ public class TestUtils {
     List<TreeNode> treeNodes = new ArrayList<>();
     for (String s : split) {
       s = s.trim();
-      if (!s.equals("null")) {
+      if (!s.equals("null") && !s.equals("")) {
         treeNodes.add(new TreeNode(Integer.parseInt(s)));
       } else {
         treeNodes.add(null);
