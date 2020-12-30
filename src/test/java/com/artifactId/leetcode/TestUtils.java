@@ -39,7 +39,7 @@ public class TestUtils {
   public static List<List<Integer>> parseListOfLists(String s) {
     s = s.substring(1, s.length());
     List<List<Integer>> result = new ArrayList<>();
-    List<Integer> acc = new ArrayList<>();
+    List<Integer> acc;
     s = s.replace("[","");
     String[] split = s.split("]");
     for (String s1 : split) {
@@ -53,6 +53,24 @@ public class TestUtils {
         acc.add(Integer.parseInt(number));
       }
       result.add(acc);
+    }
+
+    return result;
+  }
+
+  public static int[][] toMatrix(String boardString) {
+    boardString = boardString.replace(" ", "");
+    String substring = boardString.substring(1, boardString.length() - 2);
+    substring = substring.replace("[", "");
+    String[] split = substring.split("],");
+    int columns = split[0].split(",").length;
+    int[][] result = new int[split.length][columns];
+    for (int i = 0; i < split.length; i++) {
+      String row = split[i];
+      String[] valuesInRow = row.split(",");
+      for (int j = 0; j < valuesInRow.length; j++) {
+        result[i][j] = Integer.parseInt(valuesInRow[j]);
+      }
     }
 
     return result;
