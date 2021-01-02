@@ -59,18 +59,29 @@ public class TestUtils {
   }
 
   public static int[][] toMatrix(String boardString) {
-    boardString = boardString.replace(" ", "");
-    String substring = boardString.substring(1, boardString.length() - 2);
+    return toTwoDimArray(boardString);
+  }
+
+
+  public static int[] toArray(String arrayString) {
+    int[][] ints = toMatrix("[" + arrayString + "]");
+    return ints[0];
+  }
+
+  public static int[][] toTwoDimArray(String string) {
+    string = string.replace(" ", "");
+    String substring = string.substring(1, string.length() - 2);
     substring = substring.replace("[", "");
     String[] split = substring.split("],");
-    int columns = split[0].split(",").length;
-    int[][] result = new int[split.length][columns];
+    int result[][] = new int[split.length][];
     for (int i = 0; i < split.length; i++) {
       String row = split[i];
       String[] valuesInRow = row.split(",");
+      int[] resultRow = new int[valuesInRow.length];
       for (int j = 0; j < valuesInRow.length; j++) {
-        result[i][j] = Integer.parseInt(valuesInRow[j]);
+        resultRow[j] = Integer.parseInt(valuesInRow[j]);
       }
+      result[i] = resultRow;
     }
 
     return result;
