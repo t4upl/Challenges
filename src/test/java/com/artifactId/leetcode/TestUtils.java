@@ -86,4 +86,27 @@ public class TestUtils {
 
     return result;
   }
+
+  public static TreeNode findNodeWithValue(TreeNode root, int value) {
+    return findNodeWithValueDfs(root, value);
+  }
+
+  private static TreeNode findNodeWithValueDfs(TreeNode treeNode, int value) {
+    if (treeNode == null) {
+      return null;
+    }
+
+    if (treeNode.val == value) {
+      return treeNode;
+    }
+
+    TreeNode nodeWithValueDfs = findNodeWithValueDfs(treeNode.left, value);
+    if (nodeWithValueDfs != null) {
+      return nodeWithValueDfs;
+    }
+
+    return findNodeWithValueDfs(treeNode.right, value);
+  }
+
+
 }
