@@ -1,5 +1,6 @@
 package com.artifactId.leetcode;
 
+import com.artifactId.leetcode.other.ListNode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,7 +70,7 @@ public class TestUtils {
   }
 
   public static int[][] toTwoDimArray(String string) {
-    string = string.replace(" ", "");
+    string = removeWhiteSpace(string);
     String substring = string.substring(1, string.length() - 2);
     substring = substring.replace("[", "");
     String[] split = substring.split("],");
@@ -85,6 +86,10 @@ public class TestUtils {
     }
 
     return result;
+  }
+
+  private static String removeWhiteSpace(String string) {
+    return string.replace(" ", "");
   }
 
   public static TreeNode findNodeWithValue(TreeNode root, int value) {
@@ -109,4 +114,22 @@ public class TestUtils {
   }
 
 
+  public static ListNode toLinkedList(String s) {
+    s = removeWhiteSpace(s);
+    s = s.substring(1, s.length() - 1);
+    String[] split = s.split(",");
+    ListNode head = new ListNode(-1000);
+    ListNode curr = head;
+    for (String s1 : split) {
+      if (s1.isEmpty()) {
+        continue;
+      }
+
+      ListNode listNode = new ListNode(Integer.parseInt(s1));
+      curr.next = listNode;
+      curr = curr.next;
+    }
+
+    return head.next;
+  }
 }

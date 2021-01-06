@@ -1,5 +1,6 @@
 package com.artifactId.leetcode.other.reversenodesinkgroup;
 
+import com.artifactId.leetcode.other.ListNode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

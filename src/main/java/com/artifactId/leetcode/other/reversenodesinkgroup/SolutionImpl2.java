@@ -1,5 +1,7 @@
 package com.artifactId.leetcode.other.reversenodesinkgroup;
 
+import com.artifactId.leetcode.other.ListNode;
+
 /**
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Reverse Nodes in k-Group.
  * Memory Usage: 41 MB, less than 5.17% of Java online submissions for Reverse Nodes in k-Group.

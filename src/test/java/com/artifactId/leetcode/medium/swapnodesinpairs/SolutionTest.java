@@ -1,12 +1,11 @@
 package com.artifactId.leetcode.medium.swapnodesinpairs;
 
-import com.artifactId.leetcode.other.reversenodesinkgroup.ListNode;
+import com.artifactId.leetcode.other.ListNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.Before;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class SolutionTest {

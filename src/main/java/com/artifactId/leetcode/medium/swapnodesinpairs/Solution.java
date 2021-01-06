@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.medium.swapnodesinpairs;
 
-import com.artifactId.leetcode.other.reversenodesinkgroup.ListNode;
+import com.artifactId.leetcode.other.ListNode;
 
 /**
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Swap Nodes in Pairs.
