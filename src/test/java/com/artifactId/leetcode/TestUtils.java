@@ -3,6 +3,8 @@ package com.artifactId.leetcode;
 import com.artifactId.leetcode.other.ListNode;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TestUtils {
 
@@ -35,28 +37,6 @@ public class TestUtils {
     }
 
     return treeNodes.get(0);
-  }
-
-  public static List<List<Integer>> parseListOfLists(String s) {
-    s = s.substring(1, s.length());
-    List<List<Integer>> result = new ArrayList<>();
-    List<Integer> acc;
-    s = s.replace("[","");
-    String[] split = s.split("]");
-    for (String s1 : split) {
-      String[] numbers = s1.split(",");
-      acc = new ArrayList<>();
-      for (String number : numbers) {
-        if (number.isEmpty()) {
-          continue;
-        }
-
-        acc.add(Integer.parseInt(number));
-      }
-      result.add(acc);
-    }
-
-    return result;
   }
 
   public static int[][] toMatrix(String boardString) {
@@ -131,5 +111,18 @@ public class TestUtils {
     }
 
     return head.next;
+  }
+
+  public static String[] toStringArray(String s) {
+    String regex = "\".*?\"";
+    Pattern pattern = Pattern.compile(regex);
+    Matcher matcher = pattern.matcher(s);
+    List<String> list = new ArrayList<>();
+    while(matcher.find()) {
+      String group = matcher.group(0);
+      list.add(group.substring(1, group.length() -1));
+    }
+
+    return list.toArray(new String[0]);
   }
 }
