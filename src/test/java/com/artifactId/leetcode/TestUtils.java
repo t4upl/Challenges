@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 public class TestUtils {
 
   public static TreeNode parseTreeNode(String treeString) {
-    String substring = treeString.substring(1, treeString.length() - 1);
+    String substring = removeOuterSymbols(treeString);
     String[] split = substring.split(",");
     List<TreeNode> treeNodes = new ArrayList<>();
     for (String s : split) {
@@ -94,9 +94,9 @@ public class TestUtils {
   }
 
 
-  public static ListNode toLinkedList(String s) {
+  public static ListNode toListNode(String s) {
     s = removeWhiteSpace(s);
-    s = s.substring(1, s.length() - 1);
+    s = removeOuterSymbols(s);
     String[] split = s.split(",");
     ListNode head = new ListNode(-1000);
     ListNode curr = head;
@@ -120,9 +120,45 @@ public class TestUtils {
     List<String> list = new ArrayList<>();
     while(matcher.find()) {
       String group = matcher.group(0);
-      list.add(group.substring(1, group.length() -1));
+      list.add(removeOuterSymbols(group));
     }
 
     return list.toArray(new String[0]);
+  }
+
+  public static List<ListNode> toListNodeList(String s) {
+    List<ListNode> ans = new ArrayList<>();
+    s = removeWhiteSpace(s);
+    s = removeOuterSymbols(s);
+    String[] split = s.split("],");
+    for (String s1 : split) {
+      System.out.println(s1);
+      s1 = removeSquareBrackets(s1);
+      s1 = addOuterSquareBrakcets(s1);
+      ListNode listNode = toListNode(s1);
+      ans.add(listNode);
+    }
+
+    return ans;
+  }
+
+  private static String addOuterSquareBrakcets(String s1) {
+    return "[" +  s1 + "]";
+  }
+
+  private static String removeSquareBrackets(String s1) {
+    s1 = s1.replace("[", "");
+    s1 = s1.replace("]", "");
+    return s1;
+  }
+
+
+  private static String removeOuterSymbols(String s) {
+    return s.substring(1, s.length() - 1);
+  }
+
+
+  public static ListNode[] toListNodeArray(String s) {
+    return toListNodeList(s).toArray(new ListNode[0]);
   }
 }

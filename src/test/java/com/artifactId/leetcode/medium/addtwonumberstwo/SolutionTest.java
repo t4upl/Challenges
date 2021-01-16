@@ -4,7 +4,6 @@ import com.artifactId.leetcode.TestUtils;
 import com.artifactId.leetcode.other.ListNode;
 import org.junit.Before;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class SolutionTest {
@@ -18,36 +17,36 @@ public class SolutionTest {
 
   @Test
   public void leet1() {
-    ListNode l1 = TestUtils.toLinkedList("[7,2,4,3]");
-    ListNode l2 = TestUtils.toLinkedList("[5,6,4]");
-    ListNode expected = TestUtils.toLinkedList("[7,8,0,7]");
+    ListNode l1 = TestUtils.toListNode("[7,2,4,3]");
+    ListNode l2 = TestUtils.toListNode("[5,6,4]");
+    ListNode expected = TestUtils.toListNode("[7,8,0,7]");
     ListNode result = solution.addTwoNumbers(l1, l2);
     Assert.assertEquals(expected, result);
   }
 
   @Test
   public void test1() {
-    ListNode l1 = TestUtils.toLinkedList("[2]");
-    ListNode l2 = TestUtils.toLinkedList("[1]");
-    ListNode expected = TestUtils.toLinkedList("[3]");
+    ListNode l1 = TestUtils.toListNode("[2]");
+    ListNode l2 = TestUtils.toListNode("[1]");
+    ListNode expected = TestUtils.toListNode("[3]");
     ListNode result = solution.addTwoNumbers(l1, l2);
     Assert.assertEquals(expected, result);
   }
 
   @Test
   public void test2() {
-    ListNode l1 = TestUtils.toLinkedList("[2]");
-    ListNode l2 = TestUtils.toLinkedList("[9]");
-    ListNode expected = TestUtils.toLinkedList("[1,1]");
+    ListNode l1 = TestUtils.toListNode("[2]");
+    ListNode l2 = TestUtils.toListNode("[9]");
+    ListNode expected = TestUtils.toListNode("[1,1]");
     ListNode result = solution.addTwoNumbers(l1, l2);
     Assert.assertEquals(expected, result);
   }
 
   @Test
   public void test3() {
-    ListNode l1 = TestUtils.toLinkedList("[2,2]");
-    ListNode l2 = TestUtils.toLinkedList("[9,9]");
-    ListNode expected = TestUtils.toLinkedList("[1,2,1]");
+    ListNode l1 = TestUtils.toListNode("[2,2]");
+    ListNode l2 = TestUtils.toListNode("[9,9]");
+    ListNode expected = TestUtils.toListNode("[1,2,1]");
     ListNode result = solution.addTwoNumbers(l1, l2);
     Assert.assertEquals(expected, result);
   }
