@@ -2,9 +2,11 @@ package com.artifactId.leetcode;
 
 import com.artifactId.leetcode.other.ListNode;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class TestUtils {
 
@@ -66,6 +68,15 @@ public class TestUtils {
     }
 
     return result;
+  }
+
+  public static List<List<Integer>> toTwoDimList(String string) {
+    int[][] ints = TestUtils.toTwoDimArray(string);
+    return Arrays.stream(ints)
+      .map(x -> Arrays.stream(x)
+        .boxed()
+        .collect(Collectors.toList()))
+      .collect(Collectors.toList());
   }
 
   private static String removeWhiteSpace(String string) {
