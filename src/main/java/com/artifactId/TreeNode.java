@@ -1,4 +1,4 @@
-package com.artifactId.leetcode;
+package com.artifactId;
 
 public class TreeNode {
 

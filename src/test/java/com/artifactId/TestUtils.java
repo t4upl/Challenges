@@ -1,4 +1,6 @@
-package com.artifactId.leetcode;
+package com.artifactId;
+
+import static java.util.stream.Collectors.toList;
 
 import com.artifactId.leetcode.other.ListNode;
 import java.util.ArrayList;
@@ -9,37 +11,6 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class TestUtils {
-
-  public static TreeNode parseTreeNode(String treeString) {
-    String substring = removeOuterSymbols(treeString);
-    String[] split = substring.split(",");
-    List<TreeNode> treeNodes = new ArrayList<>();
-    for (String s : split) {
-      s = s.trim();
-      if (!s.equals("null") && !s.equals("")) {
-        treeNodes.add(new TreeNode(Integer.parseInt(s)));
-      } else {
-        treeNodes.add(null);
-      }
-    }
-
-    int childPointer = 1;
-    for (int i = 0; i < treeNodes.size(); i++) {
-      TreeNode treeNode = treeNodes.get(i);
-      if (treeNode != null) {
-        if (childPointer < treeNodes.size()) {
-          treeNode.left = treeNodes.get(childPointer);
-          childPointer++;
-        }
-        if (childPointer < treeNodes.size()) {
-          treeNode.right = treeNodes.get(childPointer);
-          childPointer++;
-        }
-      }
-    }
-
-    return treeNodes.get(0);
-  }
 
   public static int[][] toMatrix(String boardString) {
     return toTwoDimArray(boardString);
@@ -75,33 +46,12 @@ public class TestUtils {
     return Arrays.stream(ints)
       .map(x -> Arrays.stream(x)
         .boxed()
-        .collect(Collectors.toList()))
-      .collect(Collectors.toList());
+        .collect(toList()))
+      .collect(toList());
   }
 
   private static String removeWhiteSpace(String string) {
     return string.replace(" ", "");
-  }
-
-  public static TreeNode findNodeWithValue(TreeNode root, int value) {
-    return findNodeWithValueDfs(root, value);
-  }
-
-  private static TreeNode findNodeWithValueDfs(TreeNode treeNode, int value) {
-    if (treeNode == null) {
-      return null;
-    }
-
-    if (treeNode.val == value) {
-      return treeNode;
-    }
-
-    TreeNode nodeWithValueDfs = findNodeWithValueDfs(treeNode.left, value);
-    if (nodeWithValueDfs != null) {
-      return nodeWithValueDfs;
-    }
-
-    return findNodeWithValueDfs(treeNode.right, value);
   }
 
 
@@ -116,8 +66,7 @@ public class TestUtils {
         continue;
       }
 
-      ListNode listNode = new ListNode(Integer.parseInt(s1));
-      curr.next = listNode;
+      curr.next = new ListNode(Integer.parseInt(s1));
       curr = curr.next;
     }
 
@@ -145,7 +94,7 @@ public class TestUtils {
     for (String s1 : split) {
       System.out.println(s1);
       s1 = removeSquareBrackets(s1);
-      s1 = addOuterSquareBrakcets(s1);
+      s1 = addOuterSquareBrackets(s1);
       ListNode listNode = toListNode(s1);
       ans.add(listNode);
     }
@@ -153,7 +102,7 @@ public class TestUtils {
     return ans;
   }
 
-  private static String addOuterSquareBrakcets(String s1) {
+  private static String addOuterSquareBrackets(String s1) {
     return "[" +  s1 + "]";
   }
 
@@ -164,12 +113,18 @@ public class TestUtils {
   }
 
 
-  private static String removeOuterSymbols(String s) {
+  static String removeOuterSymbols(String s) {
     return s.substring(1, s.length() - 1);
   }
 
 
   public static ListNode[] toListNodeArray(String s) {
     return toListNodeList(s).toArray(new ListNode[0]);
+  }
+
+  public static List<Integer> toIntegerList(String string) {
+    string = removeOuterSymbols(removeWhiteSpace(string));
+    String[] split = string.split(",");
+    return Arrays.stream(split).filter(x -> !x.isEmpty()).map(Integer::parseInt).collect(toList());
   }
 }

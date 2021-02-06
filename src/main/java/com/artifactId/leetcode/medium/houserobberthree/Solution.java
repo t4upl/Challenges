@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.medium.houserobberthree;
 
-import com.artifactId.leetcode.TreeNode;
+import com.artifactId.TreeNode;
 
 /**
  * Runtime: 1134 ms, faster than 5.02% of Java online submissions for House Robber III.

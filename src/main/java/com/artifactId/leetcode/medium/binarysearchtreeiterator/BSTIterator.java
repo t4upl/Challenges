@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.medium.binarysearchtreeiterator;
 
-import com.artifactId.leetcode.TreeNode;
+import com.artifactId.TreeNode;
 import java.util.LinkedList;
 
 /**

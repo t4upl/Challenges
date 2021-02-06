@@ -1,10 +1,9 @@
 package com.artifactId.leetcode.medium.gameoflife;
 
-import com.artifactId.leetcode.TestUtils;
+import com.artifactId.TestUtils;
 import java.util.Arrays;
 import org.junit.Before;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class SolutionTest {

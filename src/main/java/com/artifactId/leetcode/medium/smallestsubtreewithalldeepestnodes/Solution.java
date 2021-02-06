@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.medium.smallestsubtreewithalldeepestnodes;
 
-import com.artifactId.leetcode.TreeNode;
+import com.artifactId.TreeNode;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

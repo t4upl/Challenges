@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.medium.removeduplicatesfromsortedlisttwo;
 
-import com.artifactId.leetcode.TestUtils;
+import com.artifactId.TestUtils;
 import com.artifactId.leetcode.other.ListNode;
 import org.junit.Before;
 import org.junit.Assert;

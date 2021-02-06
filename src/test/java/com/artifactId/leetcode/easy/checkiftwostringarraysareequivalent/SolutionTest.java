@@ -1,9 +1,8 @@
 package com.artifactId.leetcode.easy.checkiftwostringarraysareequivalent;
 
-import com.artifactId.leetcode.TestUtils;
+import com.artifactId.TestUtils;
 import org.junit.Before;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class SolutionTest {
