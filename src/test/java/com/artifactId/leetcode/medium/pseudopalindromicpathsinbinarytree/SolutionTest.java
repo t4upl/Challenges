@@ -2,7 +2,6 @@ package com.artifactId.leetcode.medium.pseudopalindromicpathsinbinarytree;
 
 import static com.artifactId.NodeUtils.parseTreeNode;
 
-import com.artifactId.TestUtils;
 import com.artifactId.TreeNode;
 import org.junit.Before;
 import org.junit.Assert;
