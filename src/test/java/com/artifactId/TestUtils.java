@@ -5,7 +5,11 @@ import static java.util.stream.Collectors.toList;
 import com.artifactId.leetcode.other.ListNode;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -27,13 +31,32 @@ public class TestUtils {
     String substring = string.substring(1, string.length() - 2);
     substring = substring.replace("[", "");
     String[] split = substring.split("],");
-    int result[][] = new int[split.length][];
+    int[][] result = new int[split.length][];
     for (int i = 0; i < split.length; i++) {
       String row = split[i];
       String[] valuesInRow = row.split(",");
       int[] resultRow = new int[valuesInRow.length];
       for (int j = 0; j < valuesInRow.length; j++) {
         resultRow[j] = Integer.parseInt(valuesInRow[j]);
+      }
+      result[i] = resultRow;
+    }
+
+    return result;
+  }
+
+  private static String[][] toTwoDimStringArray(String string) {
+    string = removeWhiteSpace(string);
+    String substring = string.substring(1, string.length() - 2);
+    substring = substring.replace("[", "");
+    String[] split = substring.split("],");
+    String[][] result = new String[split.length][];
+    for (int i = 0; i < split.length; i++) {
+      String row = split[i];
+      String[] valuesInRow = row.split(",");
+      String[] resultRow = new String[valuesInRow.length];
+      for (int j = 0; j < valuesInRow.length; j++) {
+        resultRow[j] = valuesInRow[j].substring(1, valuesInRow[j].length() - 1);
       }
       result[i] = resultRow;
     }
@@ -50,8 +73,19 @@ public class TestUtils {
       .collect(toList());
   }
 
+  public static List<List<String>> toTwoDimStringList(String string) {
+    String[][] strings = TestUtils.toTwoDimStringArray(string);
+    return Arrays.stream(strings)
+      .map(x -> Arrays.stream(x).collect(toList()))
+      .collect(toList());
+  }
+
   private static String removeWhiteSpace(String string) {
     return string.replace(" ", "");
+  }
+
+  public static <T, K extends Collection<T>> Set<Set<T>> toSetOfSets(Collection<K> collections) {
+    return collections.stream().map(HashSet::new).collect(Collectors.toSet());
   }
 
 
@@ -78,7 +112,7 @@ public class TestUtils {
     Pattern pattern = Pattern.compile(regex);
     Matcher matcher = pattern.matcher(s);
     List<String> list = new ArrayList<>();
-    while(matcher.find()) {
+    while (matcher.find()) {
       String group = matcher.group(0);
       list.add(removeOuterSymbols(group));
     }
@@ -103,7 +137,7 @@ public class TestUtils {
   }
 
   private static String addOuterSquareBrackets(String s1) {
-    return "[" +  s1 + "]";
+    return "[" + s1 + "]";
   }
 
   private static String removeSquareBrackets(String s1) {
