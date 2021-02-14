@@ -37,6 +37,10 @@ public class TestUtils {
       String[] valuesInRow = row.split(",");
       int[] resultRow = new int[valuesInRow.length];
       for (int j = 0; j < valuesInRow.length; j++) {
+        if (valuesInRow[j].isEmpty()) {
+          continue;
+        }
+
         resultRow[j] = Integer.parseInt(valuesInRow[j]);
       }
       result[i] = resultRow;
