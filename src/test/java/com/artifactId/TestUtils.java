@@ -124,6 +124,10 @@ public class TestUtils {
     return list.toArray(new String[0]);
   }
 
+  public static List<String> toStringList(String s) {
+    return Arrays.asList(toStringArray(s));
+  }
+
   public static List<ListNode> toListNodeList(String s) {
     List<ListNode> ans = new ArrayList<>();
     s = removeWhiteSpace(s);
