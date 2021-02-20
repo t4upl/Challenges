@@ -1,4 +1,4 @@
-package com.artifactId.leetcode.other.romanToInt;
+package com.artifactId.leetcode.easy.romantointeger;
 
 public class Solution3 implements SolutionInterface {
 

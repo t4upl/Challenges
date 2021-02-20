@@ -1,4 +1,4 @@
-package com.artifactId.leetcode.other.romanToInt;
+package com.artifactId.leetcode.easy.romantointeger;
 
 import java.util.stream.IntStream;
 import org.junit.After;
