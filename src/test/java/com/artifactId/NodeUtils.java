@@ -1,7 +1,11 @@
 package com.artifactId;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
+import sun.reflect.generics.tree.Tree;
 
 public class NodeUtils {
 
@@ -56,4 +60,45 @@ public class NodeUtils {
 
     return findNodeWithValueDfs(treeNode.right, value);
   }
+
+  public static String toString(TreeNode treeNode) {
+    List<TreeNode> treeNodes = new LinkedList<>();
+    List<List<Integer>> result = new LinkedList<>();
+    treeNodes.add(treeNode);
+    bfs(treeNodes, result);
+    List<Integer> singleLevelList = result.stream()
+      .flatMap(Collection::stream).collect(Collectors.toList());
+
+    while (!singleLevelList.isEmpty() && singleLevelList.get(singleLevelList.size() - 1) == null) {
+      singleLevelList.remove(singleLevelList.size() - 1);
+    }
+
+    return singleLevelList.stream()
+      .map(x -> x == null ? "null" : x.toString())
+      .collect(Collectors.joining(",", "[", "]"));
+  }
+
+  private static void bfs(List<TreeNode> treeNodes, List<List<Integer>> result) {
+    if (treeNodes.isEmpty()) {
+      return;
+    }
+
+    List<Integer> list = treeNodes.stream().map(x -> x == null ? null : x.val)
+      .collect(Collectors.toList());
+    result.add(list);
+
+    List<TreeNode> newTreeNodes = new LinkedList<>();
+    for (TreeNode treeNode : treeNodes) {
+      if (treeNode == null) {
+        continue;
+      }
+
+      newTreeNodes.add(treeNode.left);
+      newTreeNodes.add(treeNode.right);
+    }
+
+    bfs(newTreeNodes, result);
+  }
+
+
 }
