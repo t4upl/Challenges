@@ -26,6 +26,7 @@ public class TestUtils {
     return ints[0];
   }
 
+  @Deprecated
   public static int[][] toTwoDimArray(String string) {
     string = removeWhiteSpace(string);
     String substring = string.substring(1, string.length() - 2);
@@ -68,13 +69,31 @@ public class TestUtils {
     return result;
   }
 
+
+
   public static List<List<Integer>> toTwoDimList(String string) {
-    int[][] ints = TestUtils.toTwoDimArray(string);
-    return Arrays.stream(ints)
-      .map(x -> Arrays.stream(x)
-        .boxed()
-        .collect(toList()))
-      .collect(toList());
+    string = removeWhiteSpace(string);
+    String substring = string.substring(1, string.length() - 1);
+    String[] split = substring.split("\\[");
+    List<List<Integer>> result = new ArrayList<>();
+    for (String innerListAsString : split) {
+      List<Integer> list = new ArrayList<>();
+      if (innerListAsString.isEmpty()) {
+        continue;
+      }
+
+      String[] split1 = innerListAsString.split(",");
+      for (String split1Elem : split1) {
+        split1Elem = split1Elem.trim().replace("]", "");
+        if (split1Elem.isEmpty()) {
+          continue;
+        }
+        list.add(Integer.parseInt(split1Elem));
+      }
+      result.add(list);
+    }
+
+    return result;
   }
 
   public static List<List<String>> toTwoDimStringList(String string) {
