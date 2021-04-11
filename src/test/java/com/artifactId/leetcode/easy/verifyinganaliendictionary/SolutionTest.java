@@ -1,7 +1,6 @@
 package com.artifactId.leetcode.easy.verifyinganaliendictionary;
 
 import com.artifactId.TestUtils;
-import org.junit.Before;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
