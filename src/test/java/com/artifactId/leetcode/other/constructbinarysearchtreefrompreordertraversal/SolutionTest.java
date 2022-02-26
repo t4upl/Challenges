@@ -155,21 +155,7 @@ public class SolutionTest {
 //            (100)   (140)
 //            /   \
 //         (110)  (120)
-  @Test
-  public void test7() {
-    TreeNode expected = new TreeNode(80);
-    TreeNode ninety = new TreeNode(90);
-    expected.right = ninety;
-    TreeNode hundred = new TreeNode(100);
-    ninety.left = hundred;
-    hundred.left = new TreeNode(110);
-    hundred.right = new TreeNode(120);
-    ninety.right = new TreeNode(140);
 
-
-    TreeNode treeNode = solution.bstFromPreorder(new int[]{80, 90, 100, 110, 120, 140});
-    Assertions.assertEquals(expected, treeNode);
-  }
 
 
 }
