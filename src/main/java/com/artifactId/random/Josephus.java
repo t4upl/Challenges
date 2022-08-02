@@ -36,8 +36,9 @@ public class Josephus {
     OptionalInt first = IntStream.range(0, active.size()).filter(x -> x > currentIndex)
       .filter(active::get)
       .findFirst();
-    if (first.isPresent())
+    if (first.isPresent()) {
       return first.getAsInt();
+    }
 
     return IntStream.range(0, active.size()).filter(active::get).findFirst().getAsInt();
   }
