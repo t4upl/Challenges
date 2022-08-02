@@ -1,4 +1,4 @@
-package com.artifactId.rocketchallenge.dynatrace;
+package com.artifactId.challengerocket.dynatrace;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,4 +1,4 @@
-package com.artifactId.rocketchallenge.y2020.EY;
+package com.artifactId.challengerocket.y2020.EY;
 
 public class EgoisticNumber {
 

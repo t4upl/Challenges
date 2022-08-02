@@ -1,4 +1,4 @@
-package com.artifactId.rocketchallenge.y2020.schaeffler;
+package com.artifactId.challengerocket.y2020.schaeffler;
 
 import java.util.Arrays;
 
