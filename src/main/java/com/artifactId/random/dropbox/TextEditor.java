@@ -2,7 +2,9 @@ package com.artifactId.random.dropbox;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import lombok.Getter;
 
 
@@ -14,8 +16,10 @@ public class TextEditor {
   int position = 0;
   Selection selection;
   String clipboard;
+  Map<String, MyDoc> docs = new HashMap<>();
   List<EditorState> undos = new ArrayList<>();
   List<EditorState> redos = new ArrayList<>();
+
 
   String[] solution(String[][] queries) {
     Arrays.stream(queries)
@@ -25,6 +29,7 @@ public class TextEditor {
   }
 
   private void apply(Operation operation) {
+    System.out.println(operation.operationType + " " + operation.text);
     String operationType = operation.operationType;
     String text = operation.text;
     if (operationType.equals("APPEND")) {
@@ -59,6 +64,25 @@ public class TextEditor {
       redoOperation();
     }
 
+    if (operationType.equals("CREATE")) {
+      createOperation(operation);
+    }
+
+    addLine(operation);
+  }
+
+  private void createOperation(Operation operation) {
+    if (docs.containsKey(operation.text)) {
+      docs.put(operation.text, new MyDoc());
+    }
+  }
+
+  private void addLine(Operation operation) {
+    if (operation.operationType.equals("CREATE") || operation.operationType.equals("SWITCH")) {
+      lines.add("");
+      return;
+    }
+
     lines.add(textState);
   }
 
@@ -68,11 +92,14 @@ public class TextEditor {
   }
 
   private void redoOperation() {
+    if (!redos.isEmpty()) {
+      undos.add(getCurrentEditorState());
+    }
     restoreEditorState(redos);
   }
 
   private void restoreEditorState(List<EditorState> editorStateQueue) {
-    if (editorStateQueue.size() == 0) {
+    if (editorStateQueue.isEmpty()) {
       return;
     }
 
@@ -89,6 +116,9 @@ public class TextEditor {
   }
 
   private void pasteOperation() {
+    if (clipboard == null) {
+      return;
+    }
     appendOperation(clipboard);
   }
 
@@ -106,11 +136,13 @@ public class TextEditor {
   }
 
   private void createSelectionOperation(Operation operation) {
-    selection = new Selection(Integer.parseInt(operation.text), Integer.parseInt(operation.text2));
+    selection = new Selection(toBound(Integer.parseInt(operation.text)), toBound(Integer.parseInt(operation.text2)));
   }
 
   private void appendOperation(String text) {
-    modificationPerformed();
+    if (selection != null || !text.isEmpty()) {
+      modificationPerformed();
+    }
     if (selection != null) {
       removeActiveSelection();
     }
@@ -156,8 +188,8 @@ public class TextEditor {
 
 
   private void backspaceOperation() {
-    modificationPerformed();
     if (selection != null) {
+      modificationPerformed();
       removeActiveSelection();
       return;
     }
@@ -165,7 +197,9 @@ public class TextEditor {
     if (position == 0) {
       return;
     }
+    modificationPerformed();
     remove(position - 1, position);
+    position= position -1;
   }
 
 
@@ -217,5 +251,10 @@ public class TextEditor {
       this.selection = selection;
     }
   }
+
+  class MyDoc {
+
+  }
+
 
 }
