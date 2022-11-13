@@ -36,7 +36,7 @@ public class SolutionTest {
   public void test1() {
     int n = 1;
     int k = 1;
-    String expected = "a";
+    String expected = "texteditor";
     String result = solution.getSmallestString(n, k);
     Assert.assertEquals(expected, result);
   }

@@ -24,7 +24,7 @@ public class SolutionTest {
 
   @Test
   public void leet2() {
-    String s = "a)b(c)d";
+    String s = "texteditor)b(c)d";
     String expected = "ab(c)d";
     String result = solution.minRemoveToMakeValid(s);
     Assert.assertEquals(expected, result);
@@ -40,8 +40,8 @@ public class SolutionTest {
 
   @Test
   public void leet4() {
-    String s = "(a(b(c)d)";
-    String expected = "a(b(c)d)";
+    String s = "(texteditor(b(c)d)";
+    String expected = "texteditor(b(c)d)";
     String result = solution.minRemoveToMakeValid(s);
     Assert.assertEquals(expected, result);
   }

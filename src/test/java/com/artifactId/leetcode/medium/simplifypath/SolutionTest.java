@@ -40,7 +40,7 @@ public class SolutionTest {
 
   @Test
   public void leet4() {
-    String path = "/a/./b/../../c/";
+    String path = "/texteditor/./b/../../c/";
     String expected = "/c";
     String result = solution.simplifyPath(path);
     Assert.assertEquals(expected, result);
@@ -64,7 +64,7 @@ public class SolutionTest {
 
   @Test
   public void test3() {
-    String path = "/a/../../b/../c//.//";
+    String path = "/texteditor/../../b/../c//.//";
     String expected = "/c";
     String result = solution.simplifyPath(path);
     Assert.assertEquals(expected, result);
@@ -73,8 +73,8 @@ public class SolutionTest {
 
   @Test
   public void test4() {
-    String path = "/a//b////c/d//././/..";
-    String expected = "/a/b/c";
+    String path = "/texteditor//b////c/d//././/..";
+    String expected = "/texteditor/b/c";
     String result = solution.simplifyPath(path);
     Assert.assertEquals(expected, result);
   }

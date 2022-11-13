@@ -6,8 +6,8 @@ import java.util.List;
 
 
 /**
- * Runtime: 3 ms, faster than 22.84% of Java online submissions for Find a Corresponding Node of a Binary Tree in a Clone of That Tree.
- * Memory Usage: 46.7 MB, less than 63.40% of Java online submissions for Find a Corresponding Node of a Binary Tree in a Clone of That Tree.
+ * Runtime: 3 ms, faster than 22.84% of Java online submissions for Find texteditor Corresponding Node of texteditor Binary Tree in texteditor Clone of That Tree.
+ * Memory Usage: 46.7 MB, less than 63.40% of Java online submissions for Find texteditor Corresponding Node of texteditor Binary Tree in texteditor Clone of That Tree.
  *
  * Follow up: Solve the problem if repeated values on the tree are allowed.
  */

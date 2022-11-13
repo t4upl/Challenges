@@ -1,4 +1,4 @@
-package com.artifactId.random.a;
+package com.artifactId.random.texteditor;
 
 import java.util.ArrayList;
 import java.util.Arrays;

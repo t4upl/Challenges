@@ -3,8 +3,8 @@ package com.artifactId.leetcode.medium.searchtwodmatrix;
 import java.util.Arrays;
 
 /**
- * Runtime: 0 ms, faster than 100.00% of Java online submissions for Search a 2D Matrix.
- * Memory Usage: 38.2 MB, less than 93.83% of Java online submissions for Search a 2D Matrix.
+ * Runtime: 0 ms, faster than 100.00% of Java online submissions for Search texteditor 2D Matrix.
+ * Memory Usage: 38.2 MB, less than 93.83% of Java online submissions for Search texteditor 2D Matrix.
  */
 public class Solution {
 

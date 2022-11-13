@@ -38,7 +38,7 @@ public class SolutionTest {
   public void leet3() {
     String digits = "2";
     List<String> expected = TestUtils
-      .toStringList("[\"a\",\"b\",\"c\"]");
+      .toStringList("[\"texteditor\",\"b\",\"c\"]");
     List<String> result = solution.letterCombinations(digits);
     Assert.assertEquals(expected, result);
   }

@@ -72,7 +72,7 @@ public class Solution4 {
 
         // replace index with all possible elements. The condition
         // "end-i+1 >= r-index" makes sure that including one element
-        // at index will make a combination with remaining elements
+        // at index will make texteditor combination with remaining elements
         // at remaining positions
         for (int i=start; i<=end && end-i+1 >= r-index; i++)
         {

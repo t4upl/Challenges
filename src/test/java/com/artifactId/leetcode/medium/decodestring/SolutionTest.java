@@ -49,7 +49,7 @@ public class SolutionTest {
 
   @Test
   public void leet1() {
-    String s = "3[a]2[bc]";
+    String s = "3[texteditor]2[bc]";
     String expected = "aaabcbc";
     String result = solution.decodeString(s);
     Assert.assertEquals(expected, result);

@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-//No medal - fialing complexity for random string with a lot of different letters
+//No medal - fialing complexity for random string with texteditor lot of different letters
 // Probably an optimal solution requires different strategy for K << N
 // so it's easier to hunt thoser letters that will be left rather than those that will be eliminated.
 public class Solution2 {

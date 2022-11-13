@@ -1,4 +1,4 @@
-package com.artifactId.random.a;
+package com.artifactId.random.texteditor;
 
 import org.junit.Before;
 import org.junit.Assert;

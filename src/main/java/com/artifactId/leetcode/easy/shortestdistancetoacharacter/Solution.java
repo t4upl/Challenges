@@ -1,8 +1,8 @@
 package com.artifactId.leetcode.easy.shortestdistancetoacharacter;
 
 /**
- * Runtime: 1 ms, faster than 96.80% of Java online submissions for Shortest Distance to a Character.
- * Memory Usage: 39.2 MB, less than 52.48% of Java online submissions for Shortest Distance to a Character.
+ * Runtime: 1 ms, faster than 96.80% of Java online submissions for Shortest Distance to texteditor Character.
+ * Memory Usage: 39.2 MB, less than 52.48% of Java online submissions for Shortest Distance to texteditor Character.
  */
 public class Solution {
 

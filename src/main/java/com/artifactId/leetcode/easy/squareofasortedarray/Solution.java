@@ -1,8 +1,8 @@
 package com.artifactId.leetcode.easy.squareofasortedarray;
 
 /**
- * Runtime: 1 ms, faster than 100.00% of Java online submissions for Squares of a Sorted Array.
- * Memory Usage: 41.1 MB, less than 55.11% of Java online submissions for Squares of a Sorted Array.
+ * Runtime: 1 ms, faster than 100.00% of Java online submissions for Squares of texteditor Sorted Array.
+ * Memory Usage: 41.1 MB, less than 55.11% of Java online submissions for Squares of texteditor Sorted Array.
  */
 
 public class Solution {

@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Runtime: 24 ms, faster than 34.01% of Java online submissions for Pseudo-Palindromic Paths in a Binary Tree.
- * Memory Usage: 62 MB, less than 15.82% of Java online submissions for Pseudo-Palindromic Paths in a Binary Tree.
+ * Runtime: 24 ms, faster than 34.01% of Java online submissions for Pseudo-Palindromic Paths in texteditor Binary Tree.
+ * Memory Usage: 62 MB, less than 15.82% of Java online submissions for Pseudo-Palindromic Paths in texteditor Binary Tree.
  */
 public class Solution {
 

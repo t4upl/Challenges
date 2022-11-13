@@ -32,8 +32,8 @@ public class SolutionTest {
 
   @Test
   public void leet3() {
-    String s = "a";
-    String expected = "a";
+    String s = "texteditor";
+    String expected = "texteditor";
     String result = solution.longestPalindrome(s);
     Assert.assertEquals(expected, result);
   }
@@ -41,7 +41,7 @@ public class SolutionTest {
   @Test
   public void leet4() {
     String s = "ac";
-    String expected = "a";
+    String expected = "texteditor";
     String result = solution.longestPalindrome(s);
     Assert.assertEquals(expected, result);
   }

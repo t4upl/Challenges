@@ -39,8 +39,8 @@ public class SolutionTest {
 
   @Test
   public void leet3() {
-    String s = "[\"a\"]";
-    String expectedAsString = "[[\"a\"]]";
+    String s = "[\"texteditor\"]";
+    String expectedAsString = "[[\"texteditor\"]]";
     String[] strs = TestUtils.toStringArray(s);
     List<List<String>> expected = TestUtils.toTwoDimStringList(expectedAsString);
     List<List<String>> result = solution.groupAnagrams(strs);

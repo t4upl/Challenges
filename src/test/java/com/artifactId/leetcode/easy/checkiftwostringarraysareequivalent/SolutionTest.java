@@ -17,7 +17,7 @@ public class SolutionTest {
   @Test
   public void leet1() {
     String[] word1 = TestUtils.toStringArray("[\"ab\", \"c\"]");
-    String[] word2 = TestUtils.toStringArray("[\"a\", \"bc\"]");
+    String[] word2 = TestUtils.toStringArray("[\"texteditor\", \"bc\"]");
     boolean expected = true;
     boolean result = solution.arrayStringsAreEqual(word1, word2);
     Assert.assertEquals(expected, result);
@@ -25,7 +25,7 @@ public class SolutionTest {
 
   @Test
   public void leet2() {
-    String[] word1 = TestUtils.toStringArray("[\"a\", \"cb\"]");
+    String[] word1 = TestUtils.toStringArray("[\"texteditor\", \"cb\"]");
     String[] word2 = TestUtils.toStringArray("[\"ab\", \"c\"]");
     boolean expected = false;
     boolean result = solution.arrayStringsAreEqual(word1, word2);
@@ -53,7 +53,7 @@ public class SolutionTest {
   @Test
   public void test1() {
     String[] word1 = TestUtils.toStringArray("[\"ab\", \"c\", \"d\"]");
-    String[] word2 = TestUtils.toStringArray("[\"a\", \"bce\"]");
+    String[] word2 = TestUtils.toStringArray("[\"texteditor\", \"bce\"]");
     boolean expected = false;
     boolean result = solution.arrayStringsAreEqual(word1, word2);
     Assert.assertEquals(expected, result);

@@ -28,8 +28,8 @@ public class SolutionTest {
   @Test
   public void leet2() {
     String s = "abpcplea";
-    List<String> d = TestUtils.toStringList("[\"a\",\"b\",\"c\"]");
-    String expected = "a";
+    List<String> d = TestUtils.toStringList("[\"texteditor\",\"b\",\"c\"]");
+    String expected = "texteditor";
     String result = solution.findLongestWord(s, d);
     Assert.assertEquals(expected, result);
   }

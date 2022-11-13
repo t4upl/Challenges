@@ -78,7 +78,7 @@ public class Solution {
 //      char[] chs = s.toCharArray();
 //      for (int i = 0; i < chs.length; i++) {
 //        char old = chs[i];
-//        for (char c = 'a'; c <= 'z'; c++) {
+//        for (char c = 'texteditor'; c <= 'z'; c++) {
 //          chs[i] = c;
 //          String word = new String(chs);
 //

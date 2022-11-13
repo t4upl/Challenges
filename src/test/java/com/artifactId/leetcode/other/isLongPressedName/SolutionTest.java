@@ -45,19 +45,19 @@ public class SolutionTest {
 
   @Test
   public void test6() {
-    boolean longPressedName = solution.isLongPressedName("a", "a");
+    boolean longPressedName = solution.isLongPressedName("texteditor", "texteditor");
     Assert.assertEquals(true,longPressedName);
   }
 
   @Test
   public void test7() {
-    boolean longPressedName = solution.isLongPressedName("a", "aa");
+    boolean longPressedName = solution.isLongPressedName("texteditor", "aa");
     Assert.assertEquals(true,longPressedName);
   }
 
   @Test
   public void test8() {
-    boolean longPressedName = solution.isLongPressedName("a", "aab");
+    boolean longPressedName = solution.isLongPressedName("texteditor", "aab");
     Assert.assertEquals(false,longPressedName);
   }
 

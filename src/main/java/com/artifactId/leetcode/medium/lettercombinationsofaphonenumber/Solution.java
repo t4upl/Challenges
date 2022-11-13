@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Runtime: 1 ms, faster than 67.72% of Java online submissions for Letter Combinations of a Phone Number.
- * Memory Usage: 39 MB, less than 36.25% of Java online submissions for Letter Combinations of a Phone Number.
+ * Runtime: 1 ms, faster than 67.72% of Java online submissions for Letter Combinations of texteditor Phone Number.
+ * Memory Usage: 39 MB, less than 36.25% of Java online submissions for Letter Combinations of texteditor Phone Number.
  */
 public class Solution {
 
