@@ -43,9 +43,37 @@ class DatabaseTest {
     }
 
     @Test
-    void shouldCommitTransaction() {
-        database.runCommands(List.of(new SetCommand("A", 1), new CommitCommand(), new GetCommand("A")));
+    void shouldCommitTransactionManyActions() {
+        database.runCommands(List.of(new StartCommand(), new SetCommand("A", 1), new SetCommand("B", 2), new CommitCommand(),
+                new GetCommand("A"), new GetCommand("B")));
+        assertThat(database.getOutput().get(0)).isEqualTo("1");
+        assertThat(database.getOutput().get(1)).isEqualTo("2");
+    }
 
+    @Test
+    void shouldCommitTransactionSerial() {
+        database.runCommands(List.of(
+                new StartCommand(), new SetCommand("A", 1), new CommitCommand(), new GetCommand("A"),
+                new StartCommand(), new SetCommand("B", 2), new CommitCommand(), new GetCommand("B")));
+        assertThat(database.getOutput().get(0)).isEqualTo("1");
+        assertThat(database.getOutput().get(1)).isEqualTo("2");
+    }
+
+    @Test
+    void shouldCommitTransactionAndAllowNonTransacitonSet() {
+        database.runCommands(List.of(
+                new StartCommand(), new SetCommand("A", 1), new CommitCommand(), new GetCommand("A"),
+                new SetCommand("A", 2), new GetCommand("A")));
+        assertThat(database.getOutput().get(0)).isEqualTo("1");
+        assertThat(database.getOutput().get(1)).isEqualTo("2");
+    }
+
+    @Test
+    void shouldRollbackTransactionManyActions() {
+        database.runCommands(List.of(new SetCommand("A", 100), new StartCommand(), new SetCommand("A", 1), new SetCommand("B", 2), new RollbackCommand(),
+                new GetCommand("A"), new GetCommand("B")));
+        assertThat(database.getOutput().get(0)).isEqualTo("100");
+        assertThat(database.getOutput().get(1)).isEqualTo("NULL");
     }
 
 

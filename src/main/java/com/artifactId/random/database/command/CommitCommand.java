@@ -12,6 +12,6 @@ public class CommitCommand implements Command{
 
     @Override
     public void run(Database database) {
-
+        database.commit();
     }
 }

@@ -13,6 +13,6 @@ public class StartCommand implements Command {
 
     @Override
     public void run(Database database) {
-
+        database.start();
     }
 }

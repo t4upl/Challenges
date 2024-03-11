@@ -10,6 +10,6 @@ public class RollbackCommand implements Command{
 
     @Override
     public void run(Database database) {
-
+        database.rollback();
     }
 }
