@@ -1,5 +1,7 @@
 package com.artifactId;
 
+import lombok.Data;
+
 public class TreeNode {
 
   public int val;
