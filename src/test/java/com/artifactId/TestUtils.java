@@ -29,6 +29,10 @@ public class TestUtils {
   @Deprecated
   public static int[][] toTwoDimArray(String string) {
     string = removeWhiteSpace(string);
+    if (string.equals("[]")) {
+      return new int[0][0];
+    }
+
     String substring = string.substring(1, string.length() - 2);
     substring = substring.replace("[", "");
     String[] split = substring.split("],");
