@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.easy.sumofleftleaves404;
 
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 
 public class Solution {
 

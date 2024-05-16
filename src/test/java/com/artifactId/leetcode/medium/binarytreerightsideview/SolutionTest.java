@@ -2,7 +2,7 @@ package com.artifactId.leetcode.medium.binarytreerightsideview;
 
 import com.artifactId.NodeUtils;
 import com.artifactId.TestUtils;
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 import java.util.List;
 import org.junit.Before;
 import org.junit.Assert;

@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.medium.convertbsttogreatertree;
 
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 
 /**
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Convert BST to Greater Tree.

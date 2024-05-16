@@ -1,11 +1,10 @@
 package com.artifactId.leetcode.easy.sumofleftleaves404;
 
 import com.artifactId.NodeUtils;
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class SolutionTest {
 

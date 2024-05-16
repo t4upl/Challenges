@@ -1,7 +1,7 @@
 package com.artifactId.leetcode.medium.smallestsubtreewithalldeepestnodes;
 
 import com.artifactId.NodeUtils;
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 import org.junit.Before;
 import org.junit.Assert;
 import org.junit.Test;

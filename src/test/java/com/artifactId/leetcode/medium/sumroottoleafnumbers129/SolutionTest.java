@@ -1,7 +1,7 @@
 package com.artifactId.leetcode.medium.sumroottoleafnumbers129;
 
 import com.artifactId.NodeUtils;
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;

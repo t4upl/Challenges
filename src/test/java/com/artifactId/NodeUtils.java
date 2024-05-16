@@ -1,5 +1,7 @@
 package com.artifactId;
 
+import com.artifactId.leetcode.TreeNode;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedList;

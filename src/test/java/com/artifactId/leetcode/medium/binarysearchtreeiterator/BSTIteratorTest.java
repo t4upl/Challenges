@@ -1,7 +1,7 @@
 package com.artifactId.leetcode.medium.binarysearchtreeiterator;
 
 import com.artifactId.NodeUtils;
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

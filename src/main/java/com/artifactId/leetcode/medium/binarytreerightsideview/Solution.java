@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.medium.binarytreerightsideview;
 
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;

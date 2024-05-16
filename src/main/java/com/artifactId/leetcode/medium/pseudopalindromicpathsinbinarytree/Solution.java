@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.medium.pseudopalindromicpathsinbinarytree;
 
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 import java.util.HashMap;
 import java.util.Map;
 

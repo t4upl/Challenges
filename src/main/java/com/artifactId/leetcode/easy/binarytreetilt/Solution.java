@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.easy.binarytreetilt;
 
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 
 /**
  *  Runtime: 0 ms, faster than 100.00% of Java online submissions for Binary Tree Tilt.

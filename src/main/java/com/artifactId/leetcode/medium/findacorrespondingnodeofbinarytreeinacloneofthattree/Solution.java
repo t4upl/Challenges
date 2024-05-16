@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.medium.findacorrespondingnodeofbinarytreeinacloneofthattree;
 
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 import java.util.LinkedList;
 import java.util.List;
 

@@ -1,6 +1,4 @@
-package com.artifactId;
-
-import lombok.Data;
+package com.artifactId.leetcode;
 
 public class TreeNode {
 

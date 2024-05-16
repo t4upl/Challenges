@@ -1,6 +1,6 @@
 package com.artifactId.leetcode.medium.verticalordertraversalofabinarytree;
 
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

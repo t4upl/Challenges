@@ -1,7 +1,7 @@
 package com.artifactId.leetcode.medium.sumroottoleafnumbers129;
 
 
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 
 public class Solution {
 

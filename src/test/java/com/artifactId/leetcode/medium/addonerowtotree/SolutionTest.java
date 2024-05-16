@@ -1,11 +1,9 @@
 package com.artifactId.leetcode.medium.addonerowtotree;
 
 import com.artifactId.NodeUtils;
-import com.artifactId.TestUtils;
-import com.artifactId.TreeNode;
+import com.artifactId.leetcode.TreeNode;
 import org.junit.Before;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class SolutionTest {
