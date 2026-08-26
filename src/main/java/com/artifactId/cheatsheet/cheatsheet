@@ -1,0 +1,27 @@
+# CHAR
+
+## Iterate over chars
+s.chars().mapToObj(x -> (char)x).forEach(x -> System.out.println(x));
+
+# ARRAYS
+## Declaration by elements
+new int[]{1, 7, 30}
+
+## Map to array
+int[] primitiveArray = List.of(1, 2, 3).stream().mapToInt(x -> x).toArray();
+String[] objectArray = Stream.of("1", "2", "3").toArray(String[]::new);
+
+## Binary search
+Arrays.binarySearch()
+
+# PRIORITY QUEUE
+PriorityQueue<Integer> p = new PriorityQueue<>();
+
+# COLLECTIONS
+## Reverse
+Collections.reverse();
+
+# SORT
+## Compare by two fields reverse order
+Comparator<Person> personComparator = Comparator.comparing((Person x) -> x.getName(), Comparator.reverseOrder())
+    .thenComparing((Person x) -> x.getSurname(), Comparator.reverseOrder());
