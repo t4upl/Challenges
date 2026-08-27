@@ -17,9 +17,17 @@ Arrays.binarySearch()
 # PRIORITY QUEUE
 PriorityQueue<Integer> p = new PriorityQueue<>();
 
+# STACK
+Stack stack = new Stack();
+
 # COLLECTIONS
+
 ## Reverse
 Collections.reverse();
+
+## Find smallest
+String result = smallestSizeStrings.stream().min(Comparator.naturalOrder())
+                .orElse("");
 
 # SORT
 ## Compare by two fields reverse order
