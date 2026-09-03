@@ -29,6 +29,12 @@ Collections.reverse();
 String result = smallestSizeStrings.stream().min(Comparator.naturalOrder())
                 .orElse("");
 
+# STREAM
+## Collect to linked list
+LinkedList<String> result = stream
+        .collect(Collectors.toCollection(LinkedList::new));
+
+
 # SORT
 ## Compare by two fields reverse order
 Comparator<Person> personComparator = Comparator.comparing((Person x) -> x.getName(), Comparator.reverseOrder())
